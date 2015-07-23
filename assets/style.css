@@ -1,0 +1,32 @@
+h1{
+    color: darkorchid;
+    font-size: 70px;
+
+    font-family: cursive;
+
+    text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+body{
+    background: -webkit-linear-gradient(lightcyan, lightgreen); /* For Safari 5.1 to 6.0 */
+    font-family: cursive;
+    font-size: 20px
+
+}
+
+#gameLink{
+    text-align: center;
+}
+
+#greeting {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    background: #fff;
+    width: 350px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+}

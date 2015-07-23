@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flappy Fairy</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Flappy Fairy</h1>
+            <img src="../assets/magic fairy.gif">
+            <br>
+            <p><strong>Play Flappy Fairy below:</strong></p>
+        <br>
+
+        <div class="row">
+            <div class="col-md-0.5"></div>
+            <div class="col-md-8">
+                <p id="gameLink"></p>
+                    <div id="game"> </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <p><strong>Top 3 Scores:</strong></p>
+                <ul id="scoreBoard">
+
+                </ul>
+            </div>
+            <div class="col-md-0.5"></div>
+    </div>
+
+    <div id="greeting">
+        <h3>Save your score</h3>
+        <form id="greeting-form" method="post" action="/score">
+            <div class="form-group">
+
+                <label for="fullName">Enter your username:</label>
+                <input type="text" id="fullName" class="form-control"
+                                   name="fullName" placeholder="Your Name" required>
+
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" class="form-control"
+                                   name="email" placeholder="your.email@theinternet.com" required>
+
+                <input type="hidden" id="score" name="score" value="0">
+
+            </div>
+            <button class="btn btn-default" type="submit">OK</button>
+            <button class="btn btn-default" type="reset" onclick="return cancelButton();">Cancel</button>
+        </form>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+    <script src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/phaser.min.js"></script>
+    <script type="text/javascript" src="../js/flappy.js"></script><div class="container">
+</body>
+</html>
